@@ -1,0 +1,86 @@
+/* Estilo cálido para galería flex */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+  color: #4e342e;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(to right, #f57c00, #ff9800);
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+}
+
+.boton {
+  background-color: #ffffff;
+  color: #f57c00;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #f57c00;
+  color: white;
+}
+
+/* Contenedor Flex */
+.contenedor-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Estilo de imagen */
+.imagen-item {
+  background-color: #ffffff;
+  border: 3px solid #f57c00;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.imagen-item figcaption {
+  background-color: #ff9800;
+  color: white;
+  padding: 0.8rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.orden-1 { order: 6; } 
+.orden-2 { order: 5; } 
+.orden-3 { order: 4; } 
+.orden-4 { order: 3; }
+.orden-5 { order: 2; } 
+.orden-6 { order: 1; } 
